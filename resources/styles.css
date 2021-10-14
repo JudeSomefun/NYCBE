@@ -1,3 +1,169 @@
 html {
     font-family: 'Roboto', 'Open Sans', sans-serif;
+    display: block;
+    color:rgb(228, 228, 228); 
+}
+body {
+    font-family: 'Roboto', 'Open Sans',sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color:rgb(110, 110, 110);
+}
+
+a {
+    color:rgba(0, 0, 0, 0.5);
+}
+
+
+.navbar {
+    padding-top: 1.5rem;
+    color:rgb(228, 228, 228);
+    background-image: url(photos/jason-leung-nM2WEy42Npg-unsplash.jpg);
+}
+
+.navbar p {
+    left: 25rem;
+}
+/*Navigation Bars*/
+ul {
+    list-style: none;
+    margin: 0px;
+}
+li {
+    color: blue;
+    padding: 0.5rem 1.5rem;
+    margin-right: 1.5rem;
+    display: inline-block;
+}
+
+/*Bodies of Text*/
+.intro {
+    height: 10rem;
+    padding-top: 1rem;
+    background-image: url(photos/NYC-Black-Eagles-Logo.png);
+    background-position: center;
+    background-repeat:repeat;
+    text-align: center;
+    text-emphasis: bold;
+    color:rgba(236, 196, 17, 1.0);
+}
+
+.intro .img {
+    width: 15rem;
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.intro .h1 {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    margin-top: 10rem;
+    padding: 2rem;
+    background-color: rgba(236, 196, 17, 0.5);
+}
+
+
+.welcome, 
+.pullquote, 
+.photos
+.upnext {
+    margin: 4em auto;
+}
+
+.welcome {
+ padding: 0 1rem;
+}
+
+.welcome p {
+ color:rgba(236, 196, 17, 0.5);
+}
+
+.pullquote h1  {
+ font-size: 1.5rem;
+ color:rgba(236, 196, 17, 0.5);
+}
+
+.pullquote p {
+    color:rgba(236, 196, 17, 0.5);
+}
+
+.upnext{
+    margin-bottom: 2rem;
+}
+ .upnext h1 {
+     color:rgba(136, 145, 115, 0.527);
+     text-shadow: silver;
+ }
+
+ .upnext span{
+text-transform: uppercase;
+ }
+
+/*Photo Sizing*/
+.photos img {
+    width: 25%;
+    margin: 1.5%; 
+}
+
+.welcome img {
+width: 50%;
+height: auto;
+}
+
+.upnext img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.upnext h1 {
+    color:rgb(228, 228, 228);
+    text-align: center;
+}
+
+
+ /*Responsive Design Section*/
+
+@media only screen and (max-width: 1048px) {
+
+  .photos img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 640px){
+
+   .intro h1 {
+    margin-top: 2rem;
+  }
+
+  .intro {
+    max-height: 200px;
+  }
+
+  .photos img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  li {
+    display: block;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+
+  .pullquote .upnext h1 {
+    font-size: 2rem;
+  }
+
+  .photos img {
+    width: 100%;
+  }
 }
