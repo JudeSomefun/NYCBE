@@ -14,33 +14,43 @@ a {
     color:rgba(0, 0, 0, 0.5);
 }
 
-
-.navbar {
-    padding-top: 1.5rem;
-    color:rgb(228, 228, 228);
-    background-image: url(photos/jason-leung-nM2WEy42Npg-unsplash.jpg);
-}
-
-.navbar p {
-    left: 25rem;
-}
 /*Navigation Bars*/
-ul {
-    list-style: none;
-    margin: 0px;
+
+header {
+  width: 100%;
+  position:static; 
+  z-index: 1;
+  height: 2.5rem;
+  padding-top: 1.5rem;
+  color:rgb(228, 228, 228);
+  background-color:rgba(0, 0, 0, 1);
+  border-bottom: 3px solid rgb(228, 228, 228);
+  align-items: center;
 }
-li {
-    color: blue;
+
+header img {
+  height: inherit;
+  padding-left: 50px;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+nav span {
+    color: rgb(236, 223, 33);
     padding: 0.5rem 1.5rem;
+    text-align: right;
     margin-right: 1.5rem;
     display: inline-block;
 }
 
-/*Bodies of Text*/
+/*Main*/
 .intro {
     height: 10rem;
     padding-top: 1rem;
-    background-image: url(photos/NYC-Black-Eagles-Logo.png);
+    background-color:rgba(136, 145, 115, 0.527);
     background-position: center;
     background-repeat:repeat;
     text-align: center;
@@ -101,6 +111,27 @@ li {
 text-transform: uppercase;
  }
 
+ /*Footer*/
+ footer {
+   position: relative;
+   width: 100%;
+   text-align: left;
+   padding-left: 20px;
+   z-index: 1;
+   height: 2.5rem;
+   padding-top: 1.5rem;
+   color:rgb(228, 228, 228);
+   background-color:rgba(0, 0, 0, 1);
+   border-top: 3px solid rgb(228, 228, 228);align-items: center;
+   
+ }
+
+ footer a {
+   color:rgb(236, 223, 33);
+   display:inline-block; 
+
+ }
+
 /*Photo Sizing*/
 .photos img {
     width: 25%;
@@ -152,7 +183,7 @@ height: auto;
     margin-right: auto;
   }
 
-  li {
+  span {
     display: block;
     text-align: center;
   }
