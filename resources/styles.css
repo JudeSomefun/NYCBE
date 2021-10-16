@@ -8,8 +8,14 @@ body {
 }
 
 
-a {
-    color:rgba(214, 228, 22, 0.705);
+a:hover, a:visited, a:focus {
+  color: rgba(214, 228, 22, 0.705);
+  text-decoration: none;
+}
+
+a:active {
+  color: #000000;
+  background-color: #a60000;
 }
 
 .flex-container{
