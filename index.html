@@ -2,23 +2,29 @@
 <html>
     <head>
         <title>Home of the New York City Black Eagles</title>
-        <link rel="stylesheet" type="text/css" href="resources/styles.css">
+        <link rel="stylesheet" type="text/css" href="resources/CSS/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
-        <header id="navbar" class="flex-container">
-             <img src="resources/photos/NYC-Black-Eagles-Logo.png">
+        <header>
+            <div class="topnav" id="myTopnav">
              
              <nav>
-                <span><a href="">Roster</a></span>
-                <span><a href="">History</a></span>
-                <span><a href="">Upcoming Events</a></span>
-                <span><a href="">Results</a></span>
-                <span><a href="">About</a></span>  
+                <span><img src="resources/photos/NYC-Black-Eagles-Logo.png"></span>
+                <span><a href="#home" class="active">Home</a></span>
+                <span><a href="#roster">Roster</a></span>
+                <span><a href="#history">History</a></span>
+                <span><a href="#events">Upcoming Events</a></span>
+                <span><a href="#results">Results</a></span>
+                <span><a href="about">About</a></span>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
              </nav>
+             
+            </div>
         </header>
 
     <!--Main Content-->
