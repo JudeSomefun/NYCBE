@@ -31,8 +31,8 @@ a:active {
   overflow: hidden;
 }
 
-header a {
-  float: left;
+.topnav a {
+  float:left;
   display: block;
   color:darkorange;
   text-align: center;
@@ -40,20 +40,24 @@ header a {
   text-decoration: none;
   font-size: 17px;
 }
+.topnav a:hover {
+  background-color: rgb(52, 92, 224);
+  color: rgb(0,0,0);
+}
 
-header a.active {
+.topnav a.active {
  background-color: rgb(131, 136, 136);
  color:rgb(255,255,255);
 }
 
-header .icon {
+.topnav .icon {
   display: none;
 }
 
-header img {
+.topnav img {
   height: 3rem;
   float: left;
-  padding; 0;
+  padding: 0;
 
 }
 
@@ -136,10 +140,6 @@ text-transform: uppercase;
    
  }
 
- header footer a {
-   color:rgb(236, 223, 33);
-   display:inline-block; 
- }
 
 /*Photo Sizing*/
 .photos img {
@@ -167,15 +167,24 @@ height: auto;
 
  /*Responsive Design Section*/
 
-@media screen and (max-width: 640px) {
-  header.responsive {position: relative;}
-  header.responive a.icon{
+@media screen and (max-width: 1080px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+
+@media screen and (max-width: 1080px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+}
 
-  header.responsive a {
+  .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
